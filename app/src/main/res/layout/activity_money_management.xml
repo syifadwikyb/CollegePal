@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/grey"
+    tools:context=".MoneyManagement">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="20dp"
+        android:paddingLeft="20dp">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="33dp"
+            android:src="@drawable/logo_cp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Keuangan"
+            android:paddingLeft="15dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:textColor="@color/purple"
+            android:layout_gravity="center_vertical"
+            android:textSize="20dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:paddingTop="18dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingBottom="10dp">
+        <LinearLayout
+            android:layout_width="142dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/belum_selesai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_bold"
+                android:gravity="center"
+                android:text="Sisa Uang"
+                android:textColor="@color/purple"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/remainingMoney"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="Rp 1.000.000"
+                android:gravity="center"
+                android:textColor="@color/purple"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            >
+
+            <TextView
+                android:id="@+id/sudah_selesai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="Total Pengeluaran"
+                android:gravity="center"
+                android:textColor="@color/purple"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/totalOutcome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="Rp 10.000.000"
+                android:gravity="center"
+                android:textColor="@color/purple"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="0dp"
+        android:background="@drawable/button3"
+        android:orientation="vertical"
+        android:layout_gravity="bottom">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/showAllMoney"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Semua"
+                android:layout_weight="1"
+                android:fontFamily="@font/montserrat_bold"
+                android:textColor="@color/purple"
+                android:gravity="center"
+                android:backgroundTint="@color/orange"
+                android:textSize="9sp"
+                android:layout_marginRight="5dp"
+                />
+            <Button
+                android:id="@+id/showIncomeMoney"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pemasukan"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:fontFamily="@font/montserrat_bold"
+                android:textColor="@color/purple"
+                android:layout_marginRight="5dp"
+                android:backgroundTint="@color/green"
+                android:textSize="9sp"
+                />
+            <Button
+                android:id="@+id/showOutcomeMoney"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pengeluaran"
+                android:layout_weight="1"
+                android:fontFamily="@font/montserrat_bold"
+                android:textColor="@color/purple"
+                android:gravity="center"
+                android:backgroundTint="@color/red"
+                android:textSize="9sp"
+                />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/listMoneyManagement"
+            android:layout_width="match_parent"
+            android:layout_marginTop="50dp"
+            android:layout_height="525dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="540dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/border_grey"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                >
+                <ImageButton
+                    android:id="@+id/assignmentButtonMoneyManagement"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/list"
+                    android:layout_marginTop="15dp"
+                    style="@style/ImageButtonNoBackground"/>
+                <ImageButton
+                    android:id="@+id/moneyButtonMoneyManagement"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/babi"
+                    android:layout_marginTop="15dp"
+                    style="@style/ImageButtonNoBackground"/>
+                <ImageButton
+                    android:id="@+id/addMoney"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/plus"
+                    android:layout_marginBottom="10dp"
+                    style="@style/ImageButtonNoBackground"/>
+                <ImageButton
+                    android:id="@+id/scheduleButtonMoneyManagement"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/calendar_button"
+                    android:layout_marginTop="15dp"
+                    style="@style/ImageButtonNoBackground"/>
+                <ImageButton
+                    android:id="@+id/profileButtonMoneyManagement"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/profile"
+                    android:layout_marginTop="15dp"
+                    style="@style/ImageButtonNoBackground"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

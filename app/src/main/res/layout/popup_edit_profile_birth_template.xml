@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingRight="22dp"
+        android:background="@color/grey"
+        android:paddingLeft="22dp">
+
+        <TextView
+            android:id="@+id/editProfileName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tanggal Lahir"
+            android:textColor="@color/purple"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/montserrat_bold"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/editProfileBirthInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/editProfileBirthCardView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="5dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editProfileBirthInputEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat"
+                        android:textColor="@color/purple"
+                        android:background="@drawable/button2"
+                        android:maxLength="13"
+                        android:paddingLeft="15dp"
+                        android:paddingTop="20dp"
+                        android:paddingBottom="20dp"
+                        android:enabled="false"
+                        android:inputType="datetime" />
+                </androidx.cardview.widget.CardView>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <ImageView
+                android:id="@+id/birthCalendarIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@id/editProfileBirthInputLayout"
+                android:layout_centerVertical="true"
+                android:src="@drawable/calendar"
+                android:padding="8dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:contentDescription="Calendar Icon" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/editProfileBirthCancelButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/red"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="Cancel"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/editProfileBirthOkButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/green"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="OK"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

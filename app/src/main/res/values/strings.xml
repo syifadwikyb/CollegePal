@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CollegePal</string>
+    <string name="selected_date">%1$d-%2$d-%3$d</string>
+    <string name="formatted_money_value">Rp %1$s</string>
+    <string name="selected_time">%1$02d:%2$02d</string>
+    <string name="null_data">Masih Kosong :(</string>
+</resources>

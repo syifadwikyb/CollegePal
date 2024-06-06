@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="66dp"
+    android:orientation="horizontal"
+    android:background="@drawable/button_green"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
+    android:padding="10dp"
+    >
+
+    <LinearLayout
+        android:id="@+id/doneDeleteArea1"
+        android:layout_width="338dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/subjectDone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Sistem Operasi"
+            android:maxLength="20"
+            android:textColor="@color/purple"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/descriptionDone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:fontFamily="@font/montserrat"
+            android:text="Deskripsiiiiiiiiii"
+            android:maxLength="20"
+            android:textColor="@color/purple"
+            android:textSize="10dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/doneDeleteArea2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="2"
+        >
+        <TextView
+            android:id="@+id/deadlineDone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_bold"
+            android:textColor="@color/purple"
+            android:text="30 Desember 2024"
+            android:layout_weight="1"
+            android:textSize="10dp"
+            android:layout_gravity="center"
+            />
+
+        <ImageButton
+            android:id="@+id/checkboxDone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/done_purple"
+            android:padding="10dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:paddingLeft="10dp"
+            style="@style/ImageButtonNoBackground"
+            />
+    </LinearLayout>
+</LinearLayout>

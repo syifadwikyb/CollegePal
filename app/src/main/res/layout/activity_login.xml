@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    android:padding="38dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="137dp"
+        android:layout_height="76dp"
+        android:src="@drawable/logo_caption"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login to your account"
+            android:fontFamily="@font/montserrat_bold"
+            android:textColor="@color/purple"
+            android:textSize="16dp"
+            android:paddingTop="30dp"
+            android:paddingBottom="20dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/emailLoginCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        android:layout_marginTop="20dp"
+        app:cardElevation="5dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/emailLoginInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:hint="Email"
+            app:hintEnabled="true"
+            android:textColorHint="@color/purple"
+            android:gravity="center"
+            app:boxStrokeWidth="0dp"
+            app:boxBackgroundColor="@android:color/transparent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/emailLoginInputEditText"
+                android:layout_width="match_parent"
+                android:layout_height="63dp"
+                android:fontFamily="@font/montserrat"
+                android:textColor="@color/purple"
+                android:background="@drawable/button2"
+                android:inputType="text"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/passwordLoginCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        android:layout_marginTop="20dp"
+        app:cardElevation="5dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/passwordLoginInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:hint="Password"
+            app:hintEnabled="true"
+            android:textColorHint="@color/purple"
+            android:gravity="center"
+            app:boxStrokeWidth="0dp"
+            app:boxBackgroundColor="@android:color/transparent"
+            app:endIconMode="password_toggle"
+            app:endIconTint="@color/purple">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/passwordLoginInputEditText"
+                android:layout_width="match_parent"
+                android:layout_height="63dp"
+                android:fontFamily="@font/montserrat"
+                android:textColor="@color/purple"
+                android:background="@drawable/button2"
+                android:inputType="textPassword"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/signIn"
+        android:layout_width="276dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Login"
+        android:fontFamily="@font/montserrat_bold"
+        android:background="@drawable/button1"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/signUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create an account"
+        android:gravity="center"
+        android:fontFamily="@font/montserrat_bolditalic"
+        android:paddingTop="30dp"
+        android:textColor="@color/purple"
+        />
+</LinearLayout>
